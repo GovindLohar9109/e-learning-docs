@@ -1,22 +1,31 @@
-## TECH STACK
+# 🛠️ Tech Stack (With Versions)
 
-### Frontend
-- HTML (latest)  
-- CSS (latest)  
-- JavaScript (latest)  
-- React.js 
-- Bootstrap 
-- Material UI 
+## **Frontend**
 
-### Backend
-- Node.js 
-- Express.js 
+| Technology  | Version |
+| ----------- | ------- |
+| React.js    | 19.2.0  |
+| Bootstrap   | 5.3.8   |
+| Material UI | 7.3.5   |
 
-### Database
-- PostgreSQL 
+## **Backend**
 
-### Tools
-- Visual Studio Code (IDE)  
-- Postman  
-- DBeaver  
-- Git & GitHub (Version Control)  
+| Technology | Version |
+| ---------- | ------- |
+| Node.js    | 22.20.0 |
+| Express.js | 5.1.0   |
+
+## **Database**
+
+| Technology | Version |
+| ---------- | ------- |
+| PostgreSQL | 14.19   |
+
+## **Tools**
+
+| Tool  
+|
+| Visual Studio Code
+| Postman  
+| DBeaver  
+| Git & GitHub
