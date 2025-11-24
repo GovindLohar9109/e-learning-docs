@@ -13,10 +13,6 @@
       
       
       
-        <link rel="prev" href="../use_case/use_case_diagram/">
-      
-      
-        <link rel="next" href="../technical_documentation/aws/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>ER Diagram - E-Learning Management System</title>
+        <title>Ci cd - E-Learning Management System</title>
       
     
     
@@ -76,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entityrelationship-e-r-diagram" class="md-skip">
+        <a href="#cicd" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ER Diagram
+              Ci cd
             
           </span>
         </div>
@@ -221,20 +217,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -250,7 +244,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Functional Documentation
@@ -353,32 +347,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    ER Diagram
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../er_diagram/" class="md-nav__link">
         
   
   
@@ -389,95 +361,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-entities-and-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Entities and Attributes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Entities and Attributes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#users" class="md-nav__link">
-    <span class="md-ellipsis">
-      Users
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Roles
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user_roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      User_Roles
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#courses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Courses
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#users_courses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Users_Courses
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -687,303 +570,16 @@
 
 
 
-<h1 id="entityrelationship-e-r-diagram">Entity–Relationship (E-R) Diagram</h1>
-<p><img alt="E-R Diagram" src="../static/erd.png" /></p>
-<hr />
-<h2 id="overview">Overview</h2>
-<p>The <strong>Entity–Relationship Diagram (ERD)</strong> represents the logical structure of the ELMS database.<br />
-It defines the entities, their attributes, and the relationships among them to ensure <strong>data integrity</strong>, <strong>consistency</strong>, and <strong>efficient querying</strong>.</p>
-<p>This design supports features such as:</p>
-<ul>
-<li>User authentication and role-based access</li>
-<li>Course enrollment and tracking</li>
-</ul>
-<hr />
-<h2 id="key-entities-and-attributes">Key Entities and Attributes</h2>
-<h3 id="users"><strong>Users</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Key</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>int</td>
-<td>PK</td>
-<td>Unique identifier for each user</td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td>varchar</td>
-<td>-</td>
-<td>User’s full name</td>
-</tr>
-<tr>
-<td><code>email</code></td>
-<td>varchar</td>
-<td>UK</td>
-<td>Unique email used for login</td>
-</tr>
-<tr>
-<td><code>password</code></td>
-<td>varchar</td>
-<td>-</td>
-<td>Encrypted user password</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Account creation timestampz</td>
-</tr>
-<tr>
-<td><code>updated_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Last update timestampz</td>
-</tr>
-<tr>
-<td><code>deleted_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Soft delete indicator</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="roles"><strong>Roles</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Key</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>int</td>
-<td>PK</td>
-<td>Unique role identifier</td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td>varchar</td>
-<td>-</td>
-<td>Role name (<code>Admin</code>, <code>User</code>)</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Role creation time</td>
-</tr>
-<tr>
-<td><code>updated_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Last updated time</td>
-</tr>
-<tr>
-<td><code>deleted_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Soft delete indicator</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="user_roles"><strong>User_Roles</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Key</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>int</td>
-<td>PK</td>
-<td>Unique mapping ID</td>
-</tr>
-<tr>
-<td><code>user_id</code></td>
-<td>int</td>
-<td>FK</td>
-<td>Linked to Users table</td>
-</tr>
-<tr>
-<td><code>role_id</code></td>
-<td>int</td>
-<td>FK</td>
-<td>Linked to Roles table</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Mapping creation time</td>
-</tr>
-<tr>
-<td><code>updated_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Mapping update time</td>
-</tr>
-<tr>
-<td><code>deleted_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Soft delete indicator</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Relationship:</strong> Many-to-Many between <code>Users</code> and <code>Roles</code><br />
-(A user can have multiple roles; a role can belong to many users.)</p>
-</blockquote>
-<hr />
-<h3 id="courses"><strong>Courses</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Key</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>int</td>
-<td>PK</td>
-<td>Unique course identifier</td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td>varchar</td>
-<td>Index</td>
-<td>Course name</td>
-</tr>
-<tr>
-<td><code>description</code></td>
-<td>int</td>
-<td>-</td>
-<td>Course details</td>
-</tr>
-<tr>
-<td><code>duration</code></td>
-<td>int</td>
-<td>-</td>
-<td>Duration in hours</td>
-</tr>
-<tr>
-<td><code>image_url</code></td>
-<td>varchar</td>
-<td>-</td>
-<td>Image for course display</td>
-</tr>
-<tr>
-<td><code>link</code></td>
-<td>varchar</td>
-<td>-</td>
-<td>Link to course content</td>
-</tr>
-<tr>
-<td><code>topics</code></td>
-<td>text[]</td>
-<td>-</td>
-<td>List of included topics</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Course creation time</td>
-</tr>
-<tr>
-<td><code>updated_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Last update time</td>
-</tr>
-<tr>
-<td><code>deleted_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Soft delete indicator</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="users_courses"><strong>Users_Courses</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Key</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>int</td>
-<td>PK</td>
-<td>Record ID</td>
-</tr>
-<tr>
-<td><code>user_id</code></td>
-<td>int</td>
-<td>FK</td>
-<td>Linked to Users</td>
-</tr>
-<tr>
-<td><code>course_id</code></td>
-<td>int</td>
-<td>FK</td>
-<td>Linked to Courses</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Enrollment creation time</td>
-</tr>
-<tr>
-<td><code>updated_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Enrollment update time</td>
-</tr>
-<tr>
-<td><code>deleted_at</code></td>
-<td>timestampz</td>
-<td>-</td>
-<td>Soft delete indicator</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Unique Composite Indexing:</strong> (<code>user_id</code>, <code>course_id</code>,<code>delete_at</code>)<br />
-<strong>Unique Composite Indexing:</strong> (<code>user_id</code>, <code>role_id</code>,<code>delete_at</code>)<br />
-<strong>Unique Composite Indexing:</strong> (<code>name</code>, <code>delete_at</code>)</p>
-</blockquote>
-<hr />
-<hr />
+  <h1>Ci cd</h1>
+
+<h2 id="cicd">CI/CD</h2>
+<h3 id="frontend-cicd-vercel">Frontend CI/CD (Vercel)</h3>
+<p>It is deployed on Vercel where CI/CD is auto.</p>
+<h3 id="backend-cicd-aws-ec2">Backend CI/CD (AWS EC2)</h3>
+<h3 id="ci">CI</h3>
+<p><a href="https://github.com/GovindLohar9109/e-learning-backend/blob/server-deploy/.github/workflows/testcase.yml">CI CODE</a></p>
+<h3 id="cd">CD</h3>
+<p><a href="https://github.com/GovindLohar9109/e-learning-backend/blob/server-deploy/.github/workflows/main.yml">CD CODE</a></p>
 
 
 
