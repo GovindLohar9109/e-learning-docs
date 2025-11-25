@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../dast/">
+      
+      
+        <link rel="next" href="../futurescope/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Ci cd - E-Learning Management System</title>
+        <title>CI/CD - E-Learning Management System</title>
       
     
     
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ci cd
+              CI/CD
             
           </span>
         </div>
@@ -516,18 +520,471 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SAST AND DAST
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            SAST AND DAST
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../TEST_CASES.md" class="md-nav__link">
+      <a href="../sast/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Unit Test Case
+    SAST (Frontend & Backend)
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DAST (Frontend)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            CI/CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-cicd-vercel-auto-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend CI/CD (Vercel) (auto deploy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-cicd-aws-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend CI/CD (AWS EC2)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-for-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI for Backend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI for Backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#work-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Work Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanation-of-the-ci-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of the CI Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Explanation of the CI Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-workflow-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Workflow Trigger
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-checkout-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Checkout Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-setup-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Setup Node.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-install-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Install Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-run-test-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Run Test Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-test-result-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Test Result Decision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-end-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. End Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cd-for-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      CD for Backend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CD for Backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-the-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of the Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-start-cd-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start CD Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-event-triggered" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Event Triggered?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-deploy-to-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Deploy to EC2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-pull-latest-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Pull Latest Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Pull Latest Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-install-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Install Dependencies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Install Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-restart-pm2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Restart PM2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Restart PM2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-deployment-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Deployment Completed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-end-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. End Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -570,16 +1027,136 @@
 
 
 
-  <h1>Ci cd</h1>
+  <h1>CI/CD</h1>
 
 <h2 id="cicd">CI/CD</h2>
-<h3 id="frontend-cicd-vercel">Frontend CI/CD (Vercel)</h3>
-<p>It is deployed on Vercel where CI/CD is auto.</p>
+<h3 id="frontend-cicd-vercel-auto-deploy">Frontend CI/CD (Vercel) (auto deploy)</h3>
 <h3 id="backend-cicd-aws-ec2">Backend CI/CD (AWS EC2)</h3>
-<h3 id="ci">CI</h3>
-<p><a href="https://github.com/GovindLohar9109/e-learning-backend/blob/server-deploy/.github/workflows/testcase.yml">CI CODE</a></p>
-<h3 id="cd">CD</h3>
-<p><a href="https://github.com/GovindLohar9109/e-learning-backend/blob/server-deploy/.github/workflows/main.yml">CD CODE</a></p>
+<h2 id="ci-for-backend">CI for Backend</h2>
+<p><img alt="CI Diagram" src="../static/ci.png" /></p>
+<h4 id="work-flow">Work Flow</h4>
+<h2 id="explanation-of-the-ci-flow">Explanation of the CI Flow</h2>
+<h4 id="1-workflow-trigger">1. Workflow Trigger</h4>
+<ul>
+<li>
+<p>The pipeline runs when either:</p>
+</li>
+<li>
+<p>You push code to server-deploy branch</p>
+</li>
+<li>
+<p>OR a Pull Request is opened toward server-deploy</p>
+</li>
+</ul>
+<h4 id="2-checkout-repository">2. Checkout Repository</h4>
+<ul>
+<li>GitHub Actions pulls your repository code into the CI environment so workflows can run on it.</li>
+</ul>
+<h4 id="3-setup-nodejs">3. Setup Node.js</h4>
+<ul>
+<li>This step installs Node.js version 22.20.0 inside the GitHub Actions runner.</li>
+</ul>
+<h4 id="4-install-dependencies">4. Install Dependencies</h4>
+<ul>
+<li>Runs:</li>
+<li>npm install</li>
+<li>This installs all project dependencies required for building/testing.</li>
+</ul>
+<h4 id="5-run-test-cases">5. Run Test Cases</h4>
+<p>Executes:</p>
+<ul>
+<li>npm test</li>
+</ul>
+<h4 id="6-test-result-decision">6. Test Result Decision</h4>
+<p>If tests pass → workflow is marked SUCCESS</p>
+<p>If tests fail → workflow stops and marks FAILURE</p>
+<h4 id="7-end-workflow">7. End Workflow</h4>
+<p>Pipeline ends after success or failure.</p>
+<p><a href="https://github.com/GovindLohar9109/e-learning-backend/blob/server-deploy/.github/workflows/testcase.yml">CI Code Link</a></p>
+<h2 id="cd-for-backend">CD for Backend</h2>
+<p><img alt="CD Diagram" src="../static/cd.png" /></p>
+<h3 id="explanation-of-the-workflow">Explanation of the Workflow</h3>
+<h3 id="1-start-cd-workflow">1. Start CD Workflow</h3>
+<ul>
+<li>The deployment workflow begins.</li>
+</ul>
+<h3 id="2-event-triggered">2. Event Triggered?</h3>
+<ul>
+<li>
+<p>The workflow checks if a specific event has happened.</p>
+</li>
+<li>
+<p>The workflow is triggered when either:</p>
+</li>
+<li>
+<p>Push to server-deploy branch</p>
+</li>
+<li>
+<p>Pull Request (PR) to server-deploy branch</p>
+</li>
+<li>
+<p>If yes → continue to deployment.</p>
+</li>
+</ul>
+<h3 id="3-deploy-to-ec2">3. Deploy to EC2</h3>
+<ul>
+<li>Once the event triggers, GitHub Actions logs into your EC2 using SSH and starts running deployment commands.</li>
+</ul>
+<h3 id="4-pull-latest-code">4. Pull Latest Code</h3>
+<h4 id="command">Command:</h4>
+<ul>
+<li>
+<p>git pull origin server-deploy</p>
+</li>
+<li>
+<p>Your EC2 instance will:</p>
+</li>
+<li>
+<p>Fetch the latest code from the server-deploy branch</p>
+</li>
+<li>
+<p>Update the local project folder with new changes</p>
+</li>
+</ul>
+<h3 id="5-install-dependencies">5. Install Dependencies</h3>
+<h4 id="command_1">Command:</h4>
+<ul>
+<li>npm install</li>
+<li>All dependency is installed</li>
+</ul>
+<h3 id="6-restart-pm2">6. Restart PM2</h3>
+<h4 id="command_2">Command:</h4>
+<ul>
+<li>
+<p>if server is not running</p>
+</li>
+<li>
+<p>pm2 start src/app.js --name elearning-backend</p>
+</li>
+</ul>
+<p>OR</p>
+<ul>
+<li>
+<p>If the app is already running:</p>
+</li>
+<li>
+<p>pm2 restart elearning-backend</p>
+</li>
+</ul>
+<p>This ensures:</p>
+<ul>
+<li>
+<p>Your latest code is now running</p>
+</li>
+<li>
+<p>The backend server restarts without downtime</p>
+</li>
+</ul>
+<h3 id="7-deployment-completed">7. Deployment Completed</h3>
+<p>The workflow reports success.</p>
+<h3 id="8-end-workflow">8. End Workflow</h3>
+<p>The CD pipeline finishes.</p>
+<p><a href="https://github.com/GovindLohar9109/e-learning-backend/blob/server-deploy/.github/workflows/main.yml">CD Code Link</a></p>
 
 
 

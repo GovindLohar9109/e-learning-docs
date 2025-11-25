@@ -29,9 +29,16 @@ nav:
       - Data Flow Diagram (DFD): technical_documentation/dfd.md
       - Authentication & Authorization: technical_documentation/auth.md
       - Tech Stack: technical_documentation/techstack.md
-  - Unit Test Case: TEST_CASES.md
+
+  - SAST AND DAST:
+      - SAST (Frontend & Backend): sast.md
+      - DAST (Frontend): dast.md
+
+  - CI/CD:
+      - CI/CD: ci-cd.md
+
   - Future Scope: futurescope.md
- 
+
 plugins:
   - search
   - mermaid2

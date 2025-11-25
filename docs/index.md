@@ -27,9 +27,8 @@ Navigate through the following sections to learn more about the system:
 
 ## SAST AND DAST
 
-- [SAST (Backend)](./static//trivy-backend.png)
-- [SAST (Frontend)](./static//trivy-backend.png)
-- [DAST](./static/dast-backend.png)
+- [SAST (Backend)](sast.md)
+- [DAST (Frontend)](dast.md)
 
 ## CI/CD
 
